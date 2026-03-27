@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Desertification in India | CHE110 Project</title>
+<link rel="stylesheet" href="/Code/CSS/Style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header class="navbar liquid-glass">
+  <div class="logo">
+    <i class="ph-fill ph-leaf"></i> EcoRevive India
+  </div>
+  <nav class="nav-container">
+    <div class="nav-pill"></div>
+    <ul class="nav-links">
+      <li>
+        <a href="#home" class="nav-item active">
+          <i class="ph ph-house"></i> Home
+        </a>
+      </li>
+      <li>
+        <a href="#status" class="nav-item">
+          <i class="ph ph-chart-bar"></i> Status
+        </a>
+      </li>
+      <li>
+        <a href="#causes" class="nav-item">
+          <i class="ph ph-tree-palm"></i> Causes
+        </a>
+      </li>
+      <li>
+        <a href="#solutions" class="nav-item">
+          <i class="ph ph-lightbulb"></i> Solutions
+        </a>
+      </li>
+      <li class="nav-dropdown">
+        <a href="#" class="nav-item drop-btn" id="explore-btn">
+          <i class="ph ph-compass"></i> Explore <i class="ph ph-caret-down"></i>
+        </a>
+        <div class="dropdown-content">
+          <a href="#dashboard" class="drop-item"><i class="ph ph-presentation-chart"></i> Dashboard</a>
+          <a href="#impact" class="drop-item"><i class="ph ph-git-commit"></i> Impact</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="hero-content scroll-anim">
+    <span class="course-badge">CHE110 Environmental Project</span>
+    <h1>The Creeping Sands</h1>
+    <p>Nearly 30% of India's land undergoes degradation. Understanding the causes, facing the consequences, and deploying innovative solutions for a greener tomorrow.</p>
+    <a href="#status" class="cta-btn">Explore the Data</a>
+  </div>
+</section>
+
+<div class="marquee-container">
+  <div class="marquee-content">
+    <span>⚠️ 97.85 Million Hectares Degraded</span>
+    <span>•</span>
+    <span>💧 Groundwater Depletion Risk</span>
+    <span>•</span>
+    <span>🏜️ Expanding Thar Desert</span>
+    <span>•</span>
+    <span>🌱 Agroforestry is the Future</span>
+    <span>•</span>
+    <span>⚠️ 97.85 Million Hectares Degraded</span>
+    <span>•</span>
+    <span>💧 Groundwater Depletion Risk</span>
+    <span>•</span>
+    <span>🏜️ Expanding Thar Desert</span>
+    <span>•</span>
+    <span>🌱 Agroforestry is the Future</span>
+  </div>
+</div>
+
+<section id="status" class="status-section">
+  <h2 class="scroll-anim">Status of Desertification in India</h2>
+  <div class="stats-container">
+    <a href="https://en.wikipedia.org/wiki/Desertification" target="_blank" rel="noopener noreferrer" class="stat-card tilt-card scroll-anim" style="transition-delay: 0.1s;">
+      <img src="https://images.unsplash.com/photo-1504714146340-959ca07e1f38?auto=format&fit=crop&q=80&w=800" alt="Cracked earth">
+      <div class="card-text">
+        <h3>97.85 Million Hectares</h3>
+        <p>Total degraded land area in the country, affecting millions of livelihoods.</p>
+      </div>
+    </a>
+    <a href="https://en.wikipedia.org/wiki/Thar_Desert" target="_blank" rel="noopener noreferrer" class="stat-card tilt-card scroll-anim" style="transition-delay: 0.3s;">
+      <img src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&q=80&w=800" alt="Arid landscape">
+      <div class="card-text">
+        <h3>Vulnerable States</h3>
+        <p>Rajasthan, Gujarat, Maharashtra, and parts of Punjab face severe threats.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="causes" class="grid-section relative-section">
+  <div id="leaf-container" class="leaf-container"></div>
+  <h2 class="scroll-anim">Root Causes</h2>
+  <div class="grid-container">
+    <a href="https://en.wikipedia.org/wiki/Deforestation" target="_blank" rel="noopener noreferrer" class="grid-item tilt-card scroll-anim" style="transition-delay: 0.1s;">
+      <h3>Deforestation</h3>
+      <p>Clearing forests for urbanization removes root systems that hold topsoil together.</p>
+    </a>
+    <a href="https://en.wikipedia.org/wiki/Overgrazing" target="_blank" rel="noopener noreferrer" class="grid-item tilt-card scroll-anim" style="transition-delay: 0.2s;">
+      <h3>Overgrazing</h3>
+      <p>Intensive grazing strips land of vegetation cover, accelerating soil erosion.</p>
+    </a>
+    <a href="https://en.wikipedia.org/wiki/Environmental_impact_of_agriculture" target="_blank" rel="noopener noreferrer" class="grid-item tilt-card scroll-anim" style="transition-delay: 0.3s;">
+      <h3>Unsustainable Farming</h3>
+      <p>Heavy reliance on chemicals and improper irrigation leads to soil salinity.</p>
+    </a>
+  </div>
+</section>
+
+<section id="solutions" class="solutions-section">
+  <div class="solution-bg-images">
+    <img src="/Images/Gemini_Generated_DriedMountain.png" class="bg-dried" alt="Dried Mountain">
+    <img src="/Images/Gemini_Generated_Alive mountain.png" class="bg-alive" alt="Alive Mountain">
+    <div class="bg-overlay"></div>
+  </div>
+  
+  <h2 class="scroll-anim relative-z">Pathways to Restoration</h2>
+  <div class="interactive-cards relative-z">
+    <a href="https://en.wikipedia.org/wiki/Great_Green_Wall_of_Aravalli" target="_blank" rel="noopener noreferrer" class="solution-card tilt-card scroll-anim" style="transition-delay: 0.1s;">
+      <div class="flip-inner">
+        <div class="card-front">
+          <i class="ph-fill ph-tree"></i>
+          <h3>Aravalli Green Wall</h3>
+        </div>
+        <div class="card-back theme-green-back">
+          <p>A proposed 1,400km long ecological corridor acting as a vital green buffer against the expanding Thar Desert.</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://en.wikipedia.org/wiki/Rainwater_harvesting" target="_blank" rel="noopener noreferrer" class="solution-card tilt-card scroll-anim" style="transition-delay: 0.2s;">
+      <div class="flip-inner">
+        <div class="card-front">
+          <i class="ph-fill ph-drop"></i>
+          <h3>Water Harvesting</h3>
+        </div>
+        <div class="card-back theme-blue-back">
+          <p>Reviving traditional stepwells (Baoris) and deploying modern micro-irrigation to replenish shrinking aquifers.</p>
+        </div>
+      </div>
+    </a>
+    <a href="https://en.wikipedia.org/wiki/Agroforestry" target="_blank" rel="noopener noreferrer" class="solution-card tilt-card scroll-anim" style="transition-delay: 0.3s;">
+      <div class="flip-inner">
+        <div class="card-front">
+          <i class="ph-fill ph-plant"></i>
+          <h3>Agroforestry</h3>
+        </div>
+        <div class="card-back theme-earth-back">
+          <p>Integrating resilient native trees into farming systems to stabilize topsoil, retain moisture, and improve yields.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="media" class="media-section relative-section">
+  <div id="floating-social-container" class="drifting-apps-container"></div>
+  <h2 class="scroll-anim relative-z" style="color: aliceblue;">Watch the Deep Dive</h2>
+  <div class="video-bento-box scroll-anim relative-z">
+    <a href="https://www.instagram.com/p/YOUR_POST_ID_HERE/" target="_blank" rel="noopener noreferrer" class="video-card">
+      <div class="video-thumbnail">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=1200" alt="Nature restoration landscape">
+        <div class="play-button">
+          <i class="ph-fill ph-play-circle"></i>
+        </div>
+      </div>
+      <div class="video-info">
+        <h3>The Story of Desertification</h3>
+        <p>Watch our comprehensive deep dive explaining the root causes of land degradation and how we can reverse the damage. <span class="highlight">Watch Reel &rarr;</span></p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="dashboard" class="dashboard-section relative-section">
+  <h2 class="scroll-anim">Analytical Insights</h2>
+  
+  <div class="typing-wrapper scroll-anim">
+    <span id="typewriter-text" class="typewriter-text"></span><span class="cursor">|</span>
+  </div>
+
+  <div class="dashboard-grid scroll-anim">
+    <div class="glass-card chart-container">
+      <h3>Primary Causes of Land Degradation</h3>
+      <canvas id="causeChart"></canvas>
+    </div>
+    
+    <div class="glass-card chart-container">
+      <h3>Most Vulnerable States (Million Hectares)</h3>
+      <canvas id="stateChart"></canvas>
+    </div>
+  </div>
+
+  <div class="insights-summary-box glass-card scroll-anim">
+    <h3 class="summary-title">Decoding the Data</h3>
+    <p class="summary-text observation-text">
+      Looking at the analytics, water erosion emerges as the leading culprit behind land degradation in India, quietly washing away vital topsoil layer by layer. This is closely followed by the rapid loss of natural vegetation, which strips the earth of its protective cover and accelerates wind erosion. Geographically, Rajasthan bears the heaviest burden, with over 21 million hectares affected due to its arid climate and the expanding Thar Desert. However, the high vulnerability of states like Maharashtra and Gujarat highlights that this crisis extends far beyond traditional desert regions, threatening agricultural heartlands nationwide.
+    </p>
+    
+    <div class="solution-briefing">
+      <h4 class="solution-title">The Path Forward</h4>
+      <p class="solution-text">
+        <span class="state-warning">Currently, nearly a third of our nation's land requires immediate healing and intervention.</span><br><br>
+        We must urgently expand ecological buffers like the Aravalli Green Wall to halt the creeping sands.<br>
+        Transitioning to smart agroforestry will anchor the topsoil and restore vital moisture naturally.<br>
+        Communities must be empowered to revive ancient rainwater harvesting techniques alongside modern micro-irrigation.<br>
+        Protecting our foundation requires a unified shift from relentless exploitation to mindful, regenerative stewardship.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="impact" class="github-thread-section relative-section">
+  <div id="night-sky" class="night-sky">
+    <div class="satellite">
+      <i class="ph-duotone ph-rocket"></i>
+    </div>
+    <div class="moon"></div>
+    <div class="moon-popup">Trying to reach the moon? 🚀</div>
+  </div>
+  
+  <h2 class="scroll-anim git-heading relative-z">Mission Alignment Pipeline</h2>
+  
+  <div class="thread-wrapper scroll-anim relative-z">
+    <div class="curvy-thread-line"></div>
+    
+    <div class="thread-node">
+      <div class="curvy-connector"></div>
+      <div class="node-marker git-commit">
+        <i class="ph-bold ph-git-commit"></i>
+      </div>
+      <div class="github-card">
+        <div class="git-header">
+          <span class="git-branch">main</span>
+          <span class="git-user">CHE110_Project</span>
+          <span class="git-action">initialized</span>
+        </div>
+        <div class="git-body">
+          <h3>EcoRevive India Initiative</h3>
+          <p>Local academic focus on analyzing desertification causes, documenting geographical degradation patterns, and proposing localized sustainable agroforestry solutions.</p>
+          <div class="git-tags">
+            <span class="tag tag-blue">#Awareness</span>
+            <span class="tag tag-blue">#AcademicResearch</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thread-node">
+      <div class="curvy-connector"></div>
+      <div class="node-marker git-merge">
+        <i class="ph-bold ph-git-merge"></i>
+      </div>
+      <div class="github-card">
+        <div class="git-header">
+          <span class="git-branch">gov_india</span>
+          <span class="git-user">MoEFCC</span>
+          <span class="git-action">merged strategy</span>
+        </div>
+        <div class="git-body">
+          <h3>The Bonn Challenge Commitment</h3>
+          <p>National target set by the Government of India to restore 26 million hectares of degraded and deforested land by the year 2030, transforming barren landscapes into productive ecosystems.</p>
+          <div class="git-tags">
+            <span class="tag tag-purple">#NationalPolicy</span>
+            <span class="tag tag-purple">#LandRestoration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thread-node">
+      <div class="curvy-connector"></div>
+      <div class="node-marker git-pull">
+        <i class="ph-bold ph-git-pull-request"></i>
+      </div>
+      <div class="github-card">
+        <div class="git-header">
+          <span class="git-branch">global_goals</span>
+          <span class="git-user">United_Nations</span>
+          <span class="git-action">resolving issues</span>
+        </div>
+        <div class="git-body">
+          <h3>SDG 15: Life on Land</h3>
+          <p>Protect, restore, and promote sustainable use of terrestrial ecosystems. Combat desertification, and halt and reverse land degradation to prevent severe biodiversity loss.</p>
+          <div class="git-tags">
+            <span class="tag tag-green">#SDG15</span>
+            <span class="tag tag-green">#GlobalTarget</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thread-node">
+      <div class="curvy-connector"></div>
+      <div class="node-marker git-check">
+        <i class="ph-bold ph-check-circle"></i>
+      </div>
+      <div class="github-card border-success">
+        <div class="git-header">
+          <span class="git-branch">climate_action</span>
+          <span class="git-user">United_Nations</span>
+          <span class="git-action">approved deployment</span>
+        </div>
+        <div class="git-body">
+          <h3>SDG 13: Climate Action</h3>
+          <p>Integrating land restoration into broader climate change mitigation. Healthy soils act as massive carbon sinks, directly linking local desertification reversal to global temperature control.</p>
+          <div class="git-tags">
+            <span class="tag tag-emerald">#SDG13</span>
+            <span class="tag tag-emerald">#ClimateResilience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="sources" class="sources-section relative-section">
+  <div class="grid-animated-lines"></div>
+  <h2 class="scroll-anim relative-z">Data Sources & Citations</h2>
+  <div class="sources-grid scroll-anim relative-z">
+    
+    <a href="https://www.sac.gov.in/" target="_blank" rel="noopener noreferrer" class="source-card">
+      <div class="source-icon">
+        <i class="ph-duotone ph-rocket-launch"></i>
+      </div>
+      <div class="source-content">
+        <h4>ISRO - Space Applications Centre</h4>
+        <p class="source-doc">Desertification and Land Degradation Atlas of India</p>
+        <p class="source-desc">Provided critical satellite imagery and geospatial mapping data indicating the 97.85 mha degradation figure.</p>
+        <span class="source-link">Verify Data &rarr;</span>
+      </div>
+    </a>
+
+    <a href="https://moef.gov.in/" target="_blank" rel="noopener noreferrer" class="source-card">
+      <div class="source-icon">
+        <i class="ph-duotone ph-bank"></i>
+      </div>
+      <div class="source-content">
+        <h4>Ministry of Environment, Forest and Climate Change</h4>
+        <p class="source-doc">National Afforestation Programme Reports</p>
+        <p class="source-desc">Official government statistics on vulnerability by state, referencing Rajasthan, Gujarat, and Maharashtra.</p>
+        <span class="source-link">Verify Data &rarr;</span>
+      </div>
+    </a>
+
+    <a href="https://www.unccd.int/" target="_blank" rel="noopener noreferrer" class="source-card">
+      <div class="source-icon">
+        <i class="ph-duotone ph-globe-hemisphere-east"></i>
+      </div>
+      <div class="source-content">
+        <h4>UNCCD</h4>
+        <p class="source-doc">United Nations Convention to Combat Desertification</p>
+        <p class="source-desc">Global framework and national reporting metrics linking local Indian data to the global SDG 15 targets.</p>
+        <span class="source-link">Verify Data &rarr;</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <div class="footer-profile">
+        <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Vaibhav&backgroundColor=e4e4e7" alt="Vaibhav Raj Singh" class="profile-avatar">
+        <div class="profile-text">
+          <h4>Prakhar Dwivedi</h4>
+          <p>Creating magical digital experiences inspired by creativity and imagination.</p>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a href="mailto:your.email@example.com" title="Email" class="social-link"><i class="ph ph-envelope-simple"></i></a>
+        <a href="https://www.instagram.com/daxiie_2o" target="_blank" rel="noopener noreferrer" title="Instagram" class="social-link"><i class="ph ph-instagram-logo"></i></a>
+        <a href="https://github.com/prakhardwivedi4414-pixel" target="_blank" rel="noopener noreferrer" title="GitHub" class="social-link"><i class="ph ph-github-logo"></i></a>
+        <a href="www.linkedin.com/in/prakhar-dwivedi-5979a3377g" target="_blank" rel="noopener noreferrer" title="LinkedIn" class="social-link"><i class="ph ph-linkedin-logo"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Prakhar Dwivedi. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/Code/JavaScript/Script.js"></script>
+</body>
+</html>
+
+
+
